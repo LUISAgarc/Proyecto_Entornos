@@ -1,6 +1,6 @@
 import java.util.*
 import kotlin.random.Random
-
+/*autor luisa*/
 fun main(args: Array<String>) {
     var matriz = Array(4) { Array<Int>(4) { Random.nextInt(1, 9)} }
     var sumaFilas = Array(matriz.size){0}
@@ -21,7 +21,7 @@ fun main(args: Array<String>) {
 fun sumarFilas (m:Array<Array<Int>>,sumaFilas:Array<Int>){
     var f: Int = 0
     var c: Int = 0
-
+/*recorre las filas*/
     while (f < m.size){
         while (c < m[0].size){
             sumaFilas[f] += m[f][c]
