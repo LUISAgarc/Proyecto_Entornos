@@ -2,13 +2,13 @@ import java.util.*
 import kotlin.random.Random
 
 fun main(args: Array<String>) {
-    var m = Array(4) { Array<Int>(4) { Random.nextInt(1, 9)} }
-    var sumaFilas = Array(m.size){0}
-    var sumaColum = Array(m[0].size){0}
+    var matriz = Array(4) { Array<Int>(4) { Random.nextInt(1, 9)} }
+    var sumaFilas = Array(matriz.size){0}
+    var sumaColum = Array(matriz[0].size){0}
 
-    mostrarMatriz(m)
-    sumarFilas(m,sumaFilas)
-    sumarColumas(m,sumaColum)
+    mostrarMatriz(matriz)
+    sumarFilas(matriz,sumaFilas)
+    sumarColumas(matriz,sumaColum)
     println("La suma de las filas es")
     println(Arrays.toString(sumaFilas))
     println("La suma de las columnas es")
