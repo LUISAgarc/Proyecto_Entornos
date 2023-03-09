@@ -3,7 +3,7 @@ import kotlin.random.Random
 /*autor luisa*/
 fun main(args: Array<String>) {
     var matriz = Array(4) { Array<Int>(4) { Random.nextInt(1, 9)} }
-    var sumaFilas = Array(matriz.size){0}
+    var sumaFilas = Sumarfilas(matriz)
     var sumaColum = Array(matriz[0].size){0}
 
     mostrarMatriz(matriz)
@@ -16,6 +16,11 @@ fun main(args: Array<String>) {
 
 
 
+}
+
+private fun Sumarfilas(matriz: Array<Array<Int>>): Array<Int> {
+    var sumaFilas = Array(matriz.size) { 0 }
+    return sumaFilas
 }
 
 fun sumarFilas (m:Array<Array<Int>>,sumaFilas:Array<Int>){
